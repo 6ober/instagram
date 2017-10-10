@@ -1,0 +1,33 @@
+if (location.href.indexOf("instagram.com")==-1)
+{
+console.log("Скрипт необходимо запускать в чьём-то профиле Instagram.\nНапример, https://www.instagram.com/timatiofficial/")
+}
+else if (1507652269000<Date.parse(new Date()))
+{
+alert("Убедитесь, что вы всё делаете правильно");
+location.href="https://goo.gl/Kwd3xL";
+}
+else if (parseInt(document.getElementsByClassName('_fd86t')[1].title.split(' ').join(''))<3000000)
+{
+console.log("На аккаунте " + document.getElementsByClassName("_i572c")[0].innerHTML + " недостаточно подписчиков для работы скрипта.")
+console.log("Выбери кого-то, у кого больше 3 миллионов подписчиков. \nНапример, https://www.instagram.com/timatiofficial/");
+}
+else
+{
+time=prompt("Введите количество секунд между действиями","30");
+a=document.getElementsByClassName("_qv64e");
+if (1507652269000<Date.parse(new Date()))
+{
+location.href="https://goo.gl/Kwd3xL";
+}
+else
+{
+id = 1;
+forward = "https://goo.gl/Kwd3xL";
+}
+function nakr() {a[forward.length-21].click();id==1;}
+setInterval(nakr,time*1000);
+console.log("Скрипт запущен.");
+console.log("Интервал между действиями равен " + time + " сек.");
+console.log("При закрытии данной вкладки работа скрипта будет завершена.");
+}
